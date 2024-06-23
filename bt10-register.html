@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      #articleContent::placeholder {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <font face="Times New Roman">
+      <div align="center">
+        <h2>BÀI KIỂM TRA CHƯƠNG 2</h2>
+        <b>Môn học:</b><i>Ứng dụng Web</i><br />
+        <b>Mã số sinh viên:</b><i>12355</i><br />
+        <b>Họ và tên:</b><i>Nguyễn Văn A</i>
+        <hr color="blue" />
+        <a href="bt10-index.html">Trang chủ</a>
+        <a href="bt10-content.html">Nội dung môn học</a>
+        <a href="bt10-register.html">Đăng ký</a>
+        <h2>ĐĂNG KÝ THAM GIA DIỄN ĐÀN</h2>
+        <table border="1" bgcolor="yellow">
+          <tr>
+            <td>Tên đăng nhập:</td>
+            <td>
+              <form>
+                <input
+                  type="text"
+                  name="Ten"
+                  id="ten"
+                  placeholder="Nhập tên đăng nhập"
+                  required
+                />
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Mật khẩu:</td>
+            <td>
+              <form>
+                <input type="password" name="matkhau" placeholder="" required
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Giới tính</td>
+            <td>
+              <form>
+                <input type="radio" name="sex" value="Nam" checked />Nam
+                <input type="radio" name="sex" value="Nu" />Nữ
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Ngày sinh:</td>
+            <td>
+              <form>
+                <input type="date" name="ngaysinh" id="ngaysinh" required />
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>
+              <form>
+                <input
+                  type="email"
+                  name="txtemail"
+                  id="email"
+                  placeholder=""
+                  required
+                />
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Ngôn ngữ lập trình yêu thích nhất</td>
+            <td>
+              <form action="" method="post">
+                <select name="fav_language">
+                  <option value="C++">C++</option>
+                  <option value="C#">C#</option>
+                  <option value="PHP">PHP</option>
+                  <option value="Java">Java</option>
+                  <option value="Python">Python</option>
+                </select>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Quy định khi tham gia diễn đàn</td>
+            <td>
+              <form>
+                <textarea
+                  id="articleContent"
+                  row="5"
+                  cols="10"
+                  placeholder="Bài viết phải nghiêm túc, không chứa quảng cáo, không có nội dung phản cảm."
+                >
+                </textarea>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <form>
+                <button type="button">
+                  <img
+                    src="Images/danky.png"
+                    alt="submit"
+                    width="100px"
+                    height="30px"
+                  />
+                </button>
+                <button type="button">
+                  <img
+                    src="Images/huy.png"
+                    alt="reset"
+                    width="100px"
+                    height="30px"
+                  />
+                </button>
+              </form>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </font>
+  </body>
+</html>
